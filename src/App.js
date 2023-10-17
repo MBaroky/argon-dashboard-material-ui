@@ -48,8 +48,8 @@ import routes from "routes";
 import { useArgonController, setMiniSidenav, setOpenConfigurator } from "context";
 
 // Images
-import brand from "assets/images/logo-ct.png";
-import brandDark from "assets/images/logo-ct-dark.png";
+import brand from "assets/images/logo.png";
+import brandDark from "assets/images/logo-dark.png";
 
 // Icon Fonts
 import "assets/css/nucleo-icons.css";
@@ -149,13 +149,13 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand={darkSidenav || darkMode ? brand : brandDark}
-              brandName="Argon Dashboard 2 PRO"
+              brandName="iBrand Dashboard"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
             />
             <Configurator />
-            {configsButton}
+            {/* {configsButton} */}
           </>
         )}
         {layout === "vr" && <Configurator />}
@@ -173,13 +173,13 @@ export default function App() {
           <Sidenav
             color={sidenavColor}
             brand={darkSidenav || darkMode ? brand : brandDark}
-            brandName="Argon Dashboard 2 PRO"
+            brandName="iBrand Dashboard"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}
             onMouseLeave={handleOnMouseLeave}
           />
           <Configurator />
-          {configsButton}
+          {/* {configsButton} */}
         </>
       )}
       {layout === "vr" && <Configurator />}
